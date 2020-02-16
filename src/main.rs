@@ -12,8 +12,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     let buf: Vec<_> = stdin().bytes().take(amount).collect::<Result<_, _>>()?;
     if buf.is_empty() {
-        eprintln!("qrs: Error: No input");
-        return Ok(());
+        return Err("No input".into());
     }
 
     let code = QrCode::new(&buf)?;
