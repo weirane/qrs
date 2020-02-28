@@ -7,5 +7,4 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-# qrcode = { version = "0.12", default-features = false }
-qrcode = { git = "https://github.com/kennytm/qrcode-rust", default-features = false }
+qrcode = { version = "0.12", default-features = false }
